@@ -1,0 +1,186 @@
+@import "var";
+@mixin btn {
+  padding: 15px 25px;
+  border: none;
+  font-family: $fontFamily;
+  background-color: transparent;
+  outline: 1px solid black;
+  border-radius: 30px;
+  transition: cursor .2s ease;
+    &:hover {
+      cursor: pointer;
+    }
+}
+@mixin btn-for-ios {
+  background-color: $strongCyan;
+  outline: none;
+  color: white;
+  transition: filter .1s ease-out;
+    &:hover {
+      filter: drop-shadow(0 1px 2px hsl(170, 67%, 8%));
+    }
+}
+@mixin btn-for-mos {
+  background-color: $lightBlue;
+  outline: none;
+  color: white;
+  transition: filter .1s ease-out;
+  &:hover {
+    filter: drop-shadow(0 1px 2px hsl(233, 46%, 18%));
+  }
+}
+.bg-header {
+  background-image: linear-gradient(to bottom, transparent, white),
+    url("../images/bg-header-mobile.png");
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -99;
+  max-width: 100vw;
+}
+.head-sec {
+  @include global-padding();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  .header-content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    .logo {
+      margin-bottom: 2.5rem;
+      img {
+        width: unset;
+      }
+    }
+    .disc {
+      .title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: $darkGrayishBlue;
+      }
+      .title-disc {
+        margin-bottom: 2.5rem;
+        color: $grayishBlue;
+      }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      margin-bottom: 3rem;
+      .btn {
+        @include btn();
+      }
+      .btn-for-ios {
+        @include btn-for-ios();
+      }
+      .btn-for-mac {
+        @include btn-for-mos();
+      }
+      * {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) {
+  .head-sec {
+    .header-content {
+      .logo {
+        margin-top: 3rem;
+      }
+      .disc {
+        .title {
+          font-size: 2.2rem;
+          margin-bottom: 1.5rem;
+        }
+        .title-disc {
+          margin-bottom: 2.5rem;
+          font-size: 1.1rem;
+        }
+      }
+      .buttons {
+        width: 65%;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .bg-header {
+    background-image: linear-gradient(to bottom, transparent, white),
+      url("../images/bg-header-desktop.png");
+  }
+  .head-sec {
+    .header-content {
+      .disc {
+        .title {
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
+        }
+        .title-disc {
+          margin-bottom: 2.5rem;
+          font-size: 1.5rem;
+          width: 800px;
+        }
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1rem;
+        width: unset;
+        .btn {
+          width: 250px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .head-sec {
+    .header-content {
+      .disc {
+        .title {
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
+        }
+        .title-disc {
+          font-size: 2rem;
+          width: 775px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .head-sec {
+    .header-content {
+      .disc {
+        .title {
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
+        }
+        .title-disc {
+          font-size: 2rem;
+          width: 775px;
+        }
+      }
+    }
+  }
+}

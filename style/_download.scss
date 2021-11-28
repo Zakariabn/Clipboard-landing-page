@@ -1,0 +1,149 @@
+@import 'var';
+
+.download-sec {
+  @include global-padding();
+    .sub-content {
+      text-align: center;
+      margin-bottom: 3rem;
+        .title {
+          color: $darkGrayishBlue;
+          margin-bottom: 2rem;
+        }
+        .title-disc {
+          color: $grayishBlue;
+          max-width: 700px;
+          margin: auto;
+        }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      margin-bottom: 5rem;
+      .btn {
+        @include btn();
+      }
+      .btn-for-ios {
+        @include btn-for-ios();
+      }
+      .btn-for-mac {
+        @include btn-for-mos();
+      }
+      * {
+        margin-bottom: 1rem;
+      }
+    }
+}
+
+@media (min-width: 481px) {
+  .download-sec {
+    .sub-content {
+      text-align: center;
+      margin-bottom: 3rem;
+        .title {
+          color: $darkGrayishBlue;
+          margin-bottom: 2rem;
+        }
+        .title-disc {
+          color: $grayishBlue;
+        }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 65%;
+      margin: auto;
+      margin-bottom: 5rem;
+      .btn {
+        @include btn();
+      }
+      .btn-for-ios {
+        @include btn-for-ios();
+      }
+      .btn-for-mac {
+        @include btn-for-mos();
+      }
+      * {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}    
+
+@media (min-width: 769px) {
+  .download-sec {
+    .sub-content {
+      text-align: center;
+      margin-bottom: 3rem;
+        .title {
+          color: $darkGrayishBlue;
+          margin-bottom: 2rem;
+        }
+        .title-disc {
+          color: $grayishBlue;
+        }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: 250px;
+      margin: auto;
+      margin-bottom: 5rem;
+      .btn {
+        @include btn();
+      }
+      .btn-for-ios {
+        @include btn-for-ios();
+      }
+      .btn-for-mac {
+        @include btn-for-mos();
+      }
+      * {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .download-sec {
+    .sub-content {
+      text-align: center;
+      margin-bottom: 3rem;
+        .title {
+          color: $darkGrayishBlue;
+          margin-bottom: 2rem;
+        }
+        .title-disc {
+          color: $grayishBlue;
+        }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: 250px;
+      margin: auto;
+      margin-bottom: 5rem;
+      .btn {
+        @include btn();
+      }
+      .btn-for-ios {
+        @include btn-for-ios();
+      }
+      .btn-for-mac {
+        @include btn-for-mos();
+      }
+      * {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

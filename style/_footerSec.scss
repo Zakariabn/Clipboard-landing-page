@@ -1,0 +1,192 @@
+@import 'var';
+
+.footer-sec {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  padding: 2rem;
+    .footer-logo {
+      width: 40px;
+      margin-bottom: .5rem;
+    }
+    .footer-items {
+      margin-bottom: 1rem;
+        .footer-link {
+          text-decoration: none;
+          color: $darkGrayishBlue;
+          padding: .1rem;
+          transition: all .2s ease;
+            &:hover {
+              color: $strongCyan;
+
+            }
+        }
+    }
+    
+    
+    .social-media {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+        i {
+          font-size: 1.4rem;
+          color: $darkGrayishBlue;
+          transition: all .2s ease;
+            &:hover {
+              color: $strongCyan;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) {
+  .footer-sec {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    padding: 2rem;
+      .footer-logo {
+        width: 40px;
+        margin-bottom: .5rem;
+      }
+      .footer-items {
+        margin-bottom: 1rem;
+          .footer-link {
+            text-decoration: none;
+            color: $darkGrayishBlue;
+            padding: .1rem;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+  
+              }
+          }
+      }
+      
+      
+      .social-media {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+          i {
+            font-size: 1.4rem;
+            color: $darkGrayishBlue;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+              }
+          }
+      }
+  }
+}
+
+@media (min-width: 769px) {
+  .footer-sec {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 6rem;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    padding: 2rem 1rem;
+      .footer-logo {
+        width: 40px;
+        margin-bottom: unset;
+      }
+      .footer-items {
+        margin-bottom: unset;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: left;
+        column-gap: 6rem;
+          .footer-link {
+            text-decoration: none;
+            color: $darkGrayishBlue;
+            padding: .1rem;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+  
+              }
+          }
+      }
+      
+      
+      .social-media {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+          i {
+            font-size: 1.4rem;
+            color: $darkGrayishBlue;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+              }
+          }
+      }
+  }
+}
+@media (min-width: 1201px) {
+  .footer {
+    background-color: rgb(241, 241, 241);
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-sec {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 15rem;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    padding: 2rem 1rem;
+      .footer-logo {
+        width: 40px;
+        margin-bottom: unset;
+      }
+      .footer-items {
+        margin-bottom: unset;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: left;
+        column-gap: 6rem;
+          .footer-link {
+            text-decoration: none;
+            color: $darkGrayishBlue;
+            padding: .1rem;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+  
+              }
+          }
+      }
+      
+      
+      .social-media {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+          i {
+            font-size: 1.4rem;
+            color: $darkGrayishBlue;
+            transition: all .2s ease;
+              &:hover {
+                color: $strongCyan;
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,43 @@
+@import "var";
+
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin global-padding {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: white;
+  position: relative;
+  max-width: 100vw;
+}
+@media (min-width: 1201px) {
+  body > * {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-sec {
+    max-width: unset;
+  }
+}
+// img {
+//    width: 200px;
+// }
+
+@import "header";
+@import "feather";
+@import "accessiblity";
+@import "workflowSec";
+@import "download";
+@import "footerSec";
